@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+    <link rel="stylesheet" href="{% static './css/style.css' %}" />
+  </head>
+  <!-- start -->
+  <body class="login">
+    <div class="wrapper">
+      <div class="form-wrapper sign-up">Welcome</div>
+
+      <div class="form-wrapper sign-in">
+        <form action="#">
+          <h2>Login</h2>
+          <div class="input-group">
+            <input type="text" required />
+            <label for="">Username</label>
+          </div>
+          <div class="input-group">
+            <input type="password" required />
+            <label for="">Password</label>
+            <h4 class="name">Federal Medical Center Lab records</h4>
+          </div>
+
+          <button type="submit" class="btn">
+            <img
+              class="loogin"
+              src="{% static './Assets/exit.png' %}"
+              alt=""
+            />Login
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="body-bg-shape"></div>
+  </body>
+  <script src="{% static './js/script.js' %}"></script>
+</html>

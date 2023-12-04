@@ -1,0 +1,290 @@
+{% extends 'base_layout.html' %} 
+{% load static %} 
+{% block main_content %} 
+<div class="cardBox">
+                <div class="card" id="card">
+                    <div>
+                        <div class="cardName" id="cardName"> <h1>Add</h1></div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="add-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="cardName"><h1>Filter</h1></div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="filter-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+            <div class="containered" id="containered">
+
+                <section class="order" id="order">
+
+                    <form action="">
+                        <button class="btn" id="cancel">
+                            <h6>cancel</h6>
+                        </button>
+                        <div class="inputBox">
+                            <div class="input">
+                                <span>Patient Name</span>
+                                <input type="text" placeholder="enter your name">
+                            </div>
+                            <div class="input">
+                                <span>Card No</span>
+                                <input type="number" placeholder="Card number">
+                            </div>
+                        </div>
+                        <div class="inputBox">
+                            <div class="input">
+                                <span>Sex</span>
+                                <input type="text" placeholder="male or female">
+                            </div>
+                            <div class="input">
+                                <span>Ward</span>
+                                <input type="test" placeholder="heamatology">
+                            </div>
+                        </div>
+                        <div class="inputBox">
+                            <div class="input">
+                                <span>Reciept No</span>
+                                <input type="number" placeholder="Reciept no here">
+                            </div>
+                            <div class="input">
+                                <span>date and time</span>
+                                <input type="datetime-local">
+                            </div>
+                        </div>
+                        <div class="inputBox">
+                            <div class="input">
+                                <span>Cost</span>
+                                <input type="number" placeholder="cost">
+                            </div>
+                            <div class="input">
+                                <span>Age</span>
+                                <input type="number" placeholder="Age">
+                            </div>
+                            <div class="input">
+                                <span>Specimen</span>
+                               <input type="text" placeholder="specimen">
+                            </div> 
+                            <div class="input">
+                                <span>Test result</span>
+                                <textarea name="" placeholder="test result here" id="" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                
+                        <input type="submit" value="Add Patient" class="btn">
+                
+                    </form>
+                </section>
+
+            </div>
+
+
+            <div class="details">
+                <!-- order details list -->
+                <div class="header">
+                    <div class="cardHeader">
+                        <h2>Lab Report Database</h2>
+                        <!-- <a href="#" class="view-all">View All</a> -->
+                    </div>
+                    
+                    <table id="table">
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Cost</td>
+                                <td>Receipt No</td>
+                                <td>Specimen</td>
+                                <td>Time</td>
+                                <td>Date</td>
+                                <td>card No</td>
+                                <td>Sex</td>
+                                <td>Wards</td>
+                                <td>Age</td>
+                                <td>Test</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Jordan Olurotimi</td>
+                                <td>1000</td>
+                                <td>1011</td>
+                                <td><span class="status delivered">Urine</span></td>
+                                <td>9:18</td>
+                                <td>10/12/23</td>
+                                <td>27893</td>
+                                <td>M</td>
+                                <td>Male surgical ward</td>
+                                <td>22</td>
+                                <td>M/C/B</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>Oluwadare ayobami</td>
+                                <td>1000</td>
+                                <td>1012</td>
+                                <td><span class="status inprogress">Blood</span></td>
+                                <td>2:30</td>
+                                <td>12/10/23</td>
+                                <td>34567</td>
+                                <td>F</td>
+                                <td>NHIS</td>
+                                <td>28</td>
+                                <td>Mp</td>
+                            </tr>
+                            <tr>
+                                <td>Azzeez Victor</td>
+                                <td>1200</td>
+                                <td>1013</td>
+                                <td><span class="status delivered">stool</span></td>
+                                <td>5:24</td>
+                                <td>15/05/23</td>
+                                <td>345644</td>
+                                <td>M</td>
+                                <td>Eurology</td>
+                                <td>67</td>
+                                <td>Csf M/P/S</td>
+                            </tr>
+                            <tr>
+                                <td>Adedara Samuel</td>
+                                <td>1150</td>
+                                <td>1014</td>
+                                <td><span class="status pending">Urine</span></td>
+                                <td>3:40</td>
+                                <td>12/07/23</td>
+                                <td>345645</td>
+                                <td>M</td>
+                                <td>NHIS</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td>Azzeez Victor</td>
+                                <td>1200</td>
+                                <td>1013</td>
+                                <td><span class="status delivered">stool</span></td>
+                                <td>5:24</td>
+                                <td>15/05/23</td>
+                                <td>345644</td>
+                                <td>M</td>
+                                <td>X-ray</td>
+                                <td>97</td>
+                            </tr>
+                            <tr>
+                                <td>Osolonge Taiwo</td>
+                                <td>6520</td>
+                                <td>1015</td>
+                                <td><span class="status return">Urea</span></td>
+                                <td>7:37</td>
+                                <td>30/05/23</td>
+                                <td>23456</td>
+                                <td>F</td>
+                                <td>Pregnancy ward</td>
+                                <td>28</td>
+                            </tr>
+                            <tr>
+                                <td>Azzeez Victor</td>
+                                <td>1200</td>
+                                <td>1013</td>
+                                <td><span class="status delivered">stool</span></td>
+                                <td>5:24</td>
+                                <td>15/05/23</td>
+                                <td>345644</td>
+                                <td>M</td>
+                                <td>N&D</td>
+                                <td>67</td>
+                            </tr>
+                            <tr>
+                                <td>John Oseni</td>
+                                <td>1140</td>
+                                <td>1016</td>
+                                <td><span class="status inprogress">Blood</span></td>
+                                <td>8:24</td>
+                                <td>27/12/23</td>
+                                <td>27383</td>
+                                <td>M</td>
+                                <td>A&E</td>
+                                <td>54</td>
+                            </tr>
+                            <tr>
+                                <td>Clinton imaro</td>
+                                <td>5075</td>
+                                <td>1017</td>
+                                <td><span class="status pending">urine</span></td>
+                                <td>5:40</td>
+                                <td>01/25/23</td>
+                                <td>34544</td>
+                                <td>F</td>
+                                <td>A&E</td>
+                                <td>47</td>
+                            </tr>
+                            <tr>
+                                <td>Teju Oyebade</td>
+                                <td>1100</td>
+                                <td>1018</td>
+                                <td><span class="status pending">stool</span></td>
+                                <td>4:30</td>
+                                <td>10/12/22</td>
+                                <td>33443</td>
+                                <td>M</td>
+                                <td>Opthamology</td>
+                                <td>22                                </td>
+                            </tr>
+                            <tr>
+                                <td>Adenuga Simisola</td>
+                                <td>6210</td>
+                                <td>1019</td>
+                                <td><span class="status return">Blood</span></td>
+                                <td>3:46</td>
+                                <td>31/04/23</td>
+                                <td>265789</td>
+                                <td>M</td>
+                                <td>NHIS</td>
+                                <td>82</td>
+                            </tr>
+                            <tr>
+                                <td>Komolafe Eyitayo</td>
+                                <td>6250</td>
+                                <td>1120</td>
+                                <td><span class="status return">Urea</span></td>
+                                <td>4:15</td>
+                                <td>12/01/23</td>
+                                <td>353554</td>
+
+                                <td>F</td>
+                                <td>Female surgical ward</td>
+                                <td>56</td>
+                            </tr>
+                            <tr>
+                                <td>Afe Babalola</td>
+                                <td>4620</td>
+                                <td>1121</td>
+                                <td><span class="status delivered">Urine</span></td>
+                                <td>7:15</td>
+                                <td>17/07/23</td>
+                                <td>183837</td>
+                                <td>M</td>
+                                <td>GOPD</td>
+                                <td>28</td>
+                            </tr>
+                        </tbody>
+                        <div class="add-item">
+                           <h5>View All <span class="plus" >+</span> </h5>
+                        </div>
+                    </table>
+               
+                </div>
+                <!-- <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li> -->
+            </ul>
+            </div>
+
+{%endblock main_content %}
